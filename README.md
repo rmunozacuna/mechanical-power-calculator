@@ -130,14 +130,14 @@ MIT License
 
 ## Author
 
-**Ronny Muñoz-Acuña, MD**  
+**Ronny Munoz-Acuna, MD**  
 Yale School of Medicine  
 Department of Anesthesiology  
 Critical Care Medicine
 
 ## Suggested Citation
 
-Muñoz-Acuña R. *Mechanical Power Calculator for ICU Ventilation*. Version 1.0. 2026.
+Munoz-Acuna R. *Mechanical Power Calculator for ICU Ventilation*. Version 1.0. 2026.
 
 ## Version
 

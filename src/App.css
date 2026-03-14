@@ -109,7 +109,8 @@ label span {
 }
 
 input,
-select {
+select,
+.toggle-button {
   width: 100%;
   padding: 12px 14px;
   border-radius: 14px;
@@ -118,15 +119,23 @@ select {
   color: #0f172a;
 }
 
+.toggle-button {
+  width: auto;
+  cursor: pointer;
+  font-weight: 600;
+}
+
 input:focus,
-select:focus {
+select:focus,
+.toggle-button:focus {
   outline: 2px solid #94a3b8;
   outline-offset: 2px;
 }
 
 .notice,
 .formula-box,
-.mini-card {
+.mini-card,
+.citation-box {
   border: 1px solid #e2e8f0;
   border-radius: 18px;
   padding: 16px;
@@ -151,9 +160,27 @@ select:focus {
   padding: 20px;
 }
 
+.result-green {
+  background: #15803d;
+}
+
+.result-yellow {
+  background: #facc15;
+  color: #111827;
+}
+
+.result-red {
+  background: #b91c1c;
+}
+
 .result-label,
 .result-unit {
-  color: #cbd5e1;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.result-yellow .result-label,
+.result-yellow .result-unit {
+  color: rgba(17, 24, 39, 0.85);
 }
 
 .result-value {
@@ -161,6 +188,40 @@ select:focus {
   line-height: 1;
   font-weight: 700;
   margin: 10px 0 4px;
+}
+
+.zone-badge {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.zone-neutral {
+  background: #f8fafc;
+  color: #334155;
+  border-color: #e2e8f0;
+}
+
+.zone-green {
+  background: #f0fdf4;
+  color: #166534;
+  border-color: #bbf7d0;
+}
+
+.zone-yellow {
+  background: #fefce8;
+  color: #854d0e;
+  border-color: #fde68a;
+}
+
+.zone-red {
+  background: #fef2f2;
+  color: #991b1b;
+  border-color: #fecaca;
 }
 
 .mini-title {
@@ -188,27 +249,38 @@ select:focus {
   color: #b45309;
 }
 
-.formula-box + .formula-box {
+.formula-box + .formula-box,
+.citation-box + .citation-box {
   margin-top: 12px;
 }
 
-.feature-list {
-  margin: 0;
-  padding-left: 20px;
-  color: #334155;
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
 }
 
-.feature-list li + li {
-  margin-top: 10px;
+.section-header h2 {
+  margin-bottom: 0;
 }
 
 .footer {
   display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 8px 2px 24px;
+  flex-direction: column;
+  gap: 4px;
   color: #64748b;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.footer-title {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.footer-spacer {
+  margin-top: 10px;
 }
 
 @media (max-width: 860px) {
@@ -226,7 +298,8 @@ select:focus {
     border-radius: 20px;
   }
 
-  .footer {
+  .section-header {
     flex-direction: column;
+    align-items: stretch;
   }
 }

@@ -1,4 +1,4 @@
-# Mechanical Power Calculator (ICU Ventilation)
+# Mechanical Power Calculator (Mechanical Ventilation)
 
 A fast bedside calculator for estimating **mechanical power during invasive mechanical ventilation**. Designed for intensivists, anesthesiologists, respiratory therapists, and trainees for use during ICU rounds and ventilator management discussions.
 

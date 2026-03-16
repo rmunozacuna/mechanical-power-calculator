@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 
 function parseNumber(value) {
@@ -288,7 +289,8 @@ export default function App() {
             </div>
           </section>
         </div>
-         <footer className="footer card">
+
+        <footer className="footer card">
           <div className="footer-title">Mechanical Power Calculator</div>
           <div>Ronny Munoz-Acuna MD</div>
           <div>Yale School of Medicine</div>
@@ -314,6 +316,8 @@ export default function App() {
             </a>
           </div>
         </footer>
+
+        <Analytics />
       </div>
     </div>
   )

@@ -288,13 +288,31 @@ export default function App() {
             </div>
           </section>
         </div>
-
-        <footer className="footer card">
+         <footer className="footer card">
           <div className="footer-title">Mechanical Power Calculator</div>
           <div>Ronny Munoz-Acuna MD</div>
           <div>Yale School of Medicine</div>
           <div className="footer-spacer">Educational tool – not medical advice</div>
-          <div>Version 1.0</div>
+          <div>Version 1.1 – March 2026</div>
+          <div>
+            DOI:{' '}
+            <a
+              href="https://doi.org/10.5281/zenodo.19041484"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              10.5281/zenodo.19041484
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/rmunozacuna/mechanical-power-calculator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source code
+            </a>
+          </div>
         </footer>
       </div>
     </div>

@@ -1,218 +1,227 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19041484.svg)](https://doi.org/10.5281/zenodo.19041484)
+
 # Mechanical Power Calculator (Mechanical Ventilation)
 
-A fast bedside calculator for estimating **mechanical power during invasive mechanical ventilation**. Designed for intensivists, anesthesiologists, respiratory therapists, and trainees for use during ICU rounds and ventilator management discussions.
+**Open‑source bedside calculator for estimating mechanical power during
+invasive mechanical ventilation.**\
+Designed for intensivists, anesthesiologists, respiratory therapists,
+and trainees for ICU rounds, ventilator management discussions, and
+medical education.
 
----
+------------------------------------------------------------------------
 
-## Live Tool
+## Live Application
 
-**Web app:**  
+**Web app:**\
 https://mechanical-power-calculator.vercel.app/
 
-**DOI (archived version):**  
+**Archived DOI version:**\
 https://doi.org/10.5281/zenodo.19041484
 
----
+------------------------------------------------------------------------
 
-## Clinical Purpose
+## Clinical Rationale
 
-Mechanical power integrates multiple ventilator variables into a single measure of energy delivered to the respiratory system and has been associated with ventilator-induced lung injury (VILI). Bedside calculation is often impractical due to formula complexity.
+Mechanical power integrates tidal volume, airway pressures, PEEP, and
+respiratory rate into a single measure of ventilator energy delivery and
+has been associated with ventilator‑induced lung injury (VILI). Bedside
+calculation is often impractical due to formula complexity.
 
 This tool was developed to:
 
-• Facilitate bedside ICU teaching  
-• Support ventilator management discussions  
-• Improve trainee understanding of ventilator physiology  
-• Provide rapid clinical reference calculations  
-• Serve as an open educational digital tool  
+• Facilitate bedside ICU teaching\
+• Support ventilator management discussions\
+• Improve trainee understanding of ventilator physiology\
+• Provide rapid clinical reference calculations\
+• Serve as an open educational digital tool
 
----
+------------------------------------------------------------------------
 
-## Features
+## Key Features
 
-• Volume control mechanical power calculation  
-• Pressure control mechanical power calculation  
-• Driving pressure calculation (volume control)  
-• Mechanical power interpretation zones  
-• Teaching mode with formulas  
-• Mobile-friendly interface  
-• Rapid bedside usability  
-• Open-source implementation  
+• Volume control mechanical power calculation\
+• Pressure control mechanical power calculation\
+• Driving pressure calculation\
+• Mechanical power interpretation zones\
+• Teaching mode with formulas\
+• Mobile‑friendly design\
+• Rapid bedside usability\
+• Open‑source implementation
 
----
+------------------------------------------------------------------------
 
-## Formulas Used
+## Equations
 
-### Volume Control (simplified bedside approximation)
+### Volume Control
 
-**Mechanical Power (J/min)**
+Mechanical Power (J/min)
 
-MP = 0.098 × RR × VT(L) × [Ppeak − 0.5 × (Pplat − PEEP)]
+MP = 0.098 × RR × VT(L) × \[Ppeak − 0.5 × (Pplat − PEEP)\]
 
-### Pressure Control (simplified bedside approximation)
+### Pressure Control
 
-**Mechanical Power (J/min)**
+Mechanical Power (J/min)
 
 MP = 0.098 × RR × VT(L) × (ΔPinsp + PEEP)
 
 ### Variables
 
-RR = respiratory rate (breaths/min)  
-VT = tidal volume (liters)  
-Ppeak = peak airway pressure (cm H₂O)  
-Pplat = plateau pressure (cm H₂O)  
-PEEP = positive end-expiratory pressure  
-ΔPinsp = inspiratory pressure above PEEP  
+RR = respiratory rate (breaths/min)\
+VT = tidal volume (liters)\
+Ppeak = peak airway pressure (cm H₂O)\
+Pplat = plateau pressure (cm H₂O)\
+PEEP = positive end‑expiratory pressure\
+ΔPinsp = inspiratory pressure above PEEP
 
----
+------------------------------------------------------------------------
 
-## Interpretation (Educational Reference Ranges)
+## Interpretation (Educational Ranges)
 
-These ranges are intended for educational reference only:
+These ranges are intended for educational reference:
 
-• **< 12 J/min** → Lower mechanical power exposure  
-• **12–17 J/min** → Intermediate exposure  
-• **> 17 J/min** → Higher exposure associated with increased VILI risk in observational studies  
+• **\< 12 J/min** → Lower exposure\
+• **12--17 J/min** → Intermediate exposure\
+• **\> 17 J/min** → Higher exposure associated with VILI risk in
+observational studies
 
 Clinical context must always be considered.
 
----
+------------------------------------------------------------------------
 
 ## Intended Use
 
 This tool is designed to:
 
-• Support bedside physiologic assessment  
-• Facilitate ICU teaching  
-• Assist ventilator physiology understanding  
-• Provide quick educational reference  
+• Support bedside physiologic assessment\
+• Facilitate ICU education\
+• Improve ventilator physiology understanding\
+• Provide rapid educational reference
 
-This tool is **not intended to replace clinical judgment** or ventilator waveform analysis.
+This tool is **not intended to replace clinical judgment** or waveform
+analysis.
 
----
+------------------------------------------------------------------------
 
 ## Limitations
 
-This calculator uses simplified bedside equations and does not account for:
+Simplified equations do not account for:
 
-• Flow waveform effects  
-• Patient spontaneous effort  
-• Auto-PEEP  
-• Airway resistance modeling  
-• Advanced waveform analysis  
-• Nonlinear compliance  
-• Energy partitioning components  
+• Flow waveform effects\
+• Patient effort\
+• Auto‑PEEP\
+• Airway resistance modeling\
+• Nonlinear compliance\
+• Advanced waveform energy calculations
 
 Future versions may incorporate these features.
 
----
+------------------------------------------------------------------------
 
 ## Roadmap
 
-Planned future features:
+Planned future development:
 
-• Predicted body weight (PBW) calculator  
-• VT mL/kg PBW display  
-• ARDS ventilation strategy integration  
-• Advanced mechanical power formulas  
-• Auto-PEEP adjustments  
-• Educational waveform explanations  
-• Save/share results capability  
+• Predicted body weight (PBW) calculator\
+• VT mL/kg PBW display\
+• ARDS strategy integration\
+• Advanced mechanical power formulas\
+• Auto‑PEEP adjustments\
+• Educational waveform modules\
+• Result export capability
 
----
+------------------------------------------------------------------------
 
 ## Local Development
 
 ### Requirements
 
-Node.js 18 or newer  
+Node.js 18+\
 npm
 
 ### Run locally
 
+    npm install
+    npm run dev
 
-npm install
-npm run dev
+### Production build
 
+    npm run build
 
-Then open the local address shown in the terminal (usually http://localhost:5173).
+------------------------------------------------------------------------
 
----
+## Deployment
 
-### Build for production
+Recommended deployment: **Vercel**
 
+1 Create GitHub repository\
+2 Push project\
+3 Import into Vercel\
+4 Deploy
 
-npm run build
+Vercel detects Vite automatically.
 
-
----
-
-## Deployment (Vercel)
-
-1. Create GitHub repository  
-2. Upload project  
-3. Sign in to Vercel with GitHub  
-4. Import repository  
-5. Click Deploy  
-
-Vercel should detect the Vite configuration automatically.
-
----
+------------------------------------------------------------------------
 
 ## Digital Scholarship Statement
 
-This project represents **digital educational scholarship** focused on ICU physiology education and bedside clinical decision support. The software is openly available to facilitate reproducibility, dissemination, and academic collaboration.
+This project represents **digital educational scholarship** focused on
+ICU physiology education and bedside clinical decision support. The
+software is openly available to promote reproducibility, transparency,
+and academic collaboration.
 
----
+------------------------------------------------------------------------
 
 ## Disclaimer
 
-This software is provided for educational and clinical support purposes only.
+This software is provided for **educational and clinical support
+purposes only**.
 
-It does **not** provide medical advice and should not be used as a substitute for:
+It does NOT replace:
 
-• Clinical judgment  
-• Professional decision-making  
-• Institutional protocols  
-• Ventilator waveform interpretation  
+• Clinical judgment\
+• Professional decision‑making\
+• Institutional protocols\
+• Ventilator waveform interpretation
 
-The author assumes no responsibility for clinical decisions made using this tool.
+The author assumes no responsibility for clinical decisions made using
+this tool.
 
----
+------------------------------------------------------------------------
 
 ## License
 
 MIT License
 
----
+------------------------------------------------------------------------
 
 ## Author
 
-**Ronny Munoz-Acuna, MD**  
-Yale School of Medicine  
-Department of Anesthesia, Critical Care and Pain Medicine  
+**Ronny Munoz‑Acuña, MD**\
+Yale School of Medicine\
+Department of Anesthesia, Critical Care and Pain Medicine
 
----
+------------------------------------------------------------------------
 
 ## Citation
 
 If you use this tool in academic work, please cite:
 
-Munoz-Acuna R. *Mechanical Power Calculator for ICU Ventilation.* Zenodo. 2026.  
+Munoz‑Acuña R. *Mechanical Power Calculator for ICU Ventilation.*
+Zenodo. 2026.\
 https://doi.org/10.5281/zenodo.19041484
 
----
+------------------------------------------------------------------------
 
 ## Version
 
-**v1.1.0 — March 2026**
+**v1.1.0 --- March 2026**
 
-Initial public release including:
+Initial academic release including:
 
-• VC and PC calculations  
-• Interpretation zones  
-• Teaching mode  
-• DOI archived version  
-• Open-source release  
+• VC and PC calculations\
+• Interpretation zones\
+• Teaching mode\
+• DOI archived version\
+• Open‑source release
 
----
+------------------------------------------------------------------------

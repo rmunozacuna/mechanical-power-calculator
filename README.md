@@ -2,7 +2,7 @@
 
 # Mechanical Power Calculator (Mechanical Ventilation)
 
-**Open‑source bedside calculator for estimating mechanical power during
+**Open-source bedside calculator for estimating mechanical power during
 invasive mechanical ventilation.**\
 Designed for intensivists, anesthesiologists, respiratory therapists,
 and trainees for ICU rounds, ventilator management discussions, and
@@ -24,7 +24,7 @@ https://doi.org/10.5281/zenodo.19041484
 
 Mechanical power integrates tidal volume, airway pressures, PEEP, and
 respiratory rate into a single measure of ventilator energy delivery and
-has been associated with ventilator‑induced lung injury (VILI). Bedside
+has been associated with ventilator-induced lung injury (VILI). Bedside
 calculation is often impractical due to formula complexity.
 
 This tool was developed to:
@@ -44,9 +44,9 @@ This tool was developed to:
 • Driving pressure calculation\
 • Mechanical power interpretation zones\
 • Teaching mode with formulas\
-• Mobile‑friendly design\
+• Mobile-friendly design\
 • Rapid bedside usability\
-• Open‑source implementation
+• Open-source implementation
 
 ------------------------------------------------------------------------
 
@@ -70,7 +70,7 @@ RR = respiratory rate (breaths/min)\
 VT = tidal volume (liters)\
 Ppeak = peak airway pressure (cm H₂O)\
 Pplat = plateau pressure (cm H₂O)\
-PEEP = positive end‑expiratory pressure\
+PEEP = positive end-expiratory pressure\
 ΔPinsp = inspiratory pressure above PEEP
 
 ------------------------------------------------------------------------
@@ -108,7 +108,7 @@ Simplified equations do not account for:
 
 • Flow waveform effects\
 • Patient effort\
-• Auto‑PEEP\
+• Auto-PEEP\
 • Airway resistance modeling\
 • Nonlinear compliance\
 • Advanced waveform energy calculations
@@ -125,7 +125,7 @@ Planned future development:
 • VT mL/kg PBW display\
 • ARDS strategy integration\
 • Advanced mechanical power formulas\
-• Auto‑PEEP adjustments\
+• Auto-PEEP adjustments\
 • Educational waveform modules\
 • Result export capability
 
@@ -179,7 +179,7 @@ purposes only**.
 It does NOT replace:
 
 • Clinical judgment\
-• Professional decision‑making\
+• Professional decision-making\
 • Institutional protocols\
 • Ventilator waveform interpretation
 
@@ -196,7 +196,7 @@ MIT License
 
 ## Author
 
-**Ronny Munoz‑Acuña, MD**\
+**Ronny Munoz-Acuna, MD**\
 Yale School of Medicine\
 Department of Anesthesia, Critical Care and Pain Medicine
 
@@ -206,7 +206,7 @@ Department of Anesthesia, Critical Care and Pain Medicine
 
 If you use this tool in academic work, please cite:
 
-Munoz‑Acuña R. *Mechanical Power Calculator for ICU Ventilation.*
+Munoz-Acuna R. *Mechanical Power Calculator for ICU Ventilation.*
 Zenodo. 2026.\
 https://doi.org/10.5281/zenodo.19041484
 
@@ -222,6 +222,6 @@ Initial academic release including:
 • Interpretation zones\
 • Teaching mode\
 • DOI archived version\
-• Open‑source release
+• Open-source release
 
 ------------------------------------------------------------------------
